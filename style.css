@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 .container{
    min-width: 1200px;
@@ -101,6 +100,7 @@
 }
 .rec-part{
     text-align: center;
+    margin-top: 16px;
 }
 .rec-part p{
     max-width: 400px;
@@ -170,4 +170,51 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+}
+/* responsive */
+@media screen and (max-width:768px) {
+    .nav-menu{
+        display: none;
+    }
+    .mid-sec1{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 8px;
+    }
+    .left-part1{
+        padding-top: 26px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .left-part1 h3{
+        margin-bottom: 10px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .food-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .followers{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu{
+        width: auto;
+    }
+    .toggle{
+        font-size: 50px;
+        margin-right: 5px;
+        display: block;
+    }
+}
+@media screen and (min-width:768px) {
+    .toggle{
+        display: none;
+    }
 }
